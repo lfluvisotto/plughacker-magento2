@@ -7,7 +7,13 @@
     "minimum-stability": "dev",
     "require": {
         "plughacker/magento2-api": "1.0.1",
-        "plughacker/magento2-core": "1.0.1"
+        "plughacker/magento2-core": "1.0.1",
+        "magento/module-checkout": "*",
+        "magento/module-config": "*",
+        "magento/module-directory": "*",
+        "magento/module-payment": "*",
+        "magento/module-sales": "*",
+        "magento/module-vault": "*"
     },
     "autoload": {
         "files": [

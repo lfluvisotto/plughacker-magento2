@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <include xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_include.xsd">
-    <group id="plug_transaction_creditcard_installments" translate="label comment" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="100">
+    <group id="plug_transaction_creditcard_installments" translate="label comment" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="400">
     	<label>Installments</label>
-	    <field id="installments_active" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+	    <field id="installments_active" showInDefault="1" showInStore="1" showInWebsite="1" translate="label" type="select">
 	        <label>Active</label>
 	        <comment />
 	        <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
 	        <config_path>payment/plug_creditcard/installments_active</config_path>
 	    </field>
-	    <field id="installments_type" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="11" translate="label" type="select">
+	    <field id="installments_type" showInDefault="1" showInStore="1" showInWebsite="1" translate="label" type="select">
 	        <label>Type installments Unique</label>
 	        <comment>Unique(Yes) or by Brand(No).</comment>
 	        <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
@@ -17,7 +17,7 @@
                 <field id="installments_active">1</field>
             </depends>
 	    </field>
-	    <field id="installments_number" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="12" translate="label" type="text">
+	    <field id="installments_number" showInDefault="1" showInStore="1" showInWebsite="1" translate="label" type="text">
 	        <label>Number</label>
 			<backend_model>PlugHacker\PlugPagamentos\Model\Validation\GenericValidation</backend_model>
 	        <comment />
@@ -27,7 +27,7 @@
                 <field id="installments_type">1</field>
             </depends>
 	    </field>
-	    <field id="installment_min_amount" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="13" translate="label" type="text">
+	    <field id="installment_min_amount" showInDefault="1" showInStore="1" showInWebsite="1" translate="label" type="text">
 			<backend_model>PlugHacker\PlugPagamentos\Model\Validation\GenericValidation</backend_model>
 	        <label>Min Amount</label>
 	        <comment />
@@ -37,7 +37,7 @@
                 <field id="installments_type">1</field>
             </depends>
 	    </field>
-	    <field id="installments_interest_by_issuer" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="14" translate="label" type="select">
+	    <field id="installments_interest_by_issuer" showInDefault="1" showInStore="1" showInWebsite="1" translate="label" type="select">
 	        <label>Interest by issuer</label>
 	        <comment />
 	        <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
@@ -47,7 +47,7 @@
                 <field id="installments_type">1</field>
             </depends>
 	    </field>
-	    <field id="installments_interest_rate_initial" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="15" translate="label" type="text">
+	    <field id="installments_interest_rate_initial" showInDefault="1" showInStore="1" showInWebsite="1" translate="label" type="text">
 	        <label>Interest Rate Initial (%)</label>
 			<backend_model>PlugHacker\PlugPagamentos\Model\Validation\GenericValidation</backend_model>
 	        <comment />
@@ -58,7 +58,7 @@
                 <field id="installments_type">1</field>
             </depends>
 	    </field>
-	    <field id="installments_interest_rate_incremental" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="16" translate="label" type="text">
+	    <field id="installments_interest_rate_incremental" showInDefault="1" showInStore="1" showInWebsite="1" translate="label" type="text">
 	        <label>Interest Rate Incremental (%)</label>
 			<backend_model>PlugHacker\PlugPagamentos\Model\Validation\GenericValidation</backend_model>
 	        <comment />
@@ -69,7 +69,7 @@
                 <field id="installments_type">1</field>
             </depends>
 	    </field>
-	    <field id="installments_max_without_interest" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="17" translate="label" type="text">
+	    <field id="installments_max_without_interest" showInDefault="1" showInStore="1" showInWebsite="1" translate="label" type="text">
 	        <label>Max Without Interest</label>
 			<backend_model>PlugHacker\PlugPagamentos\Model\Validation\GenericValidation</backend_model>
 	        <comment />

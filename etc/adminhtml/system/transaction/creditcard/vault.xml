@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<include xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_include.xsd">
+    <group id="plug_transaction_creditcard_vault" translate="label comment" showInDefault="1" showInWebsite="1"
+           showInStore="1" sortOrder="200">
+        <label>Vault</label>
+        <field id="active" translate="label" type="select" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Enable Vault for Card Payments</label>
+            <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+            <config_path>payment/plug_creditcard_vault/active</config_path>
+        </field>
+        <field id="title" translate="label" type="text" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Vault Title</label>
+            <config_path>payment/plug_creditcard_vault/title</config_path>
+        </field>
+    </group>
+</include>
